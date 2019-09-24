@@ -10,6 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT
-# define
+#ifndef GET_NEXT_LINE_H
+# define GET_NEX_LINE_H
 #include "libft/libft.h"
+
+typedef struct 	s_list
+{
+	struct s_list *next;
+	char	c;
+	int		fd;
+}				t_list;
+
+
+#endif

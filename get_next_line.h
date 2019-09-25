@@ -11,15 +11,17 @@
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
-# define GET_NEX_LINE_H
-#include "libft/libft.h"
+# define GET_NEXT_LINE_H
+# include "libft/libft.h"
+# define BUFF_SIZE 100
 
-typedef struct 	s_list
+typedef struct			s_lst
 {
-	struct s_list *next;
-	char	c;
-	int		fd;
-}				t_list;
+	struct s_lst		*next;
+	char				*str;
+	int					fd;
+}						t_bookshelf;
 
+int						get_next_line(const int fd, char **line);
 
 #endif
